@@ -1054,6 +1054,12 @@ footer p {
     margin-top: 0.5rem;
   }
 
+  body.light-mode .navbar-collapse {
+    background: rgba(245, 244, 247, 0.98);
+    border: 1px solid rgba(45, 45, 63, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
   #home {
     text-align: center;
   }
