@@ -215,6 +215,7 @@ body.loading {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
   /* Hide scrollbar but keep scrolling */
   scrollbar-width: none; /* Firefox */
 }
@@ -227,6 +228,7 @@ body {
   background: var(--background);
   color: var(--text);
   font-family: "Poppins", sans-serif;
+  width: 100%;
   overflow-x: hidden;
 }
 
