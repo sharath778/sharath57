@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Sharath's Portfolio</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+    <!-- ======= LOADING SCREEN ======= -->
+    <div id="loader" class="loader-overlay">
+      <div class="loader-content">
+        <div class="loader-ring">
+          <div class="loader-ring-inner"></div>
+        </div>
+        <h1 class="loader-text">Welcome</h1>
+        <div class="loader-bar-track">
+          <div class="loader-bar" id="loaderBar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= NAVBAR ======= -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo" href="#home">Sharath</a>
+        <div class="d-flex align-items-center order-lg-2 ms-lg-3">
+          <button
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Toggle light/dark mode"
+          >
+            <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+          </button>
+          <button
+            class="navbar-toggler ms-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======= HERO / HOME ======= -->
+    <section id="home" class="min-vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div
+            class="col-lg-5 text-center"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <div class="profile-img-wrapper">
+              <img
+                src="assets/img.png"
+                alt="Profile Picture"
+                class="img-fluid profile-img"
+              />
+            </div>
+          </div>
+          <div
+            class="col-lg-7"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="home-content">
+              <p class="greeting">Hello, I'm</p>
+              <h1 class="display-3 fw-bold">Sharath Kumar</h1>
+              <p class="lead tagline">
+                I'm a <span class="typing" id="typed-output"></span
+                ><span class="cursor">|</span>
+              </p>
+              <p class="hero-desc">
+                I build software that doesn't just work—it delivers results. As
+                an engineer, I am passionate about transforming business needs
+                into high-quality digital products that solve actual human
+                problems. I’m always looking for the next big challenge where
+                technology meets real-world utility.
+              </p>
+              <div class="hero-btns mt-4">
+                <a href="#projects" class="btn btn-primary-custom me-3"
+                  >View Projects</a
+                >
+                <a href="#contact" class="btn btn-outline-custom">Contact Me</a>
+              </div>
+              <div class="social-icons mt-4">
+                <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="#" aria-label="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a href="#" aria-label="Twitter"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about"><i class="bi bi-chevron-double-down"></i></a>
+      </div>
+    </section>
+
+    <!-- ======= ABOUT ======= -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">About Me</h2>
+        <div
+          class="title-underline"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        ></div>
+        <div class="row mt-5 gy-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+            <p class="about-text">
+              I am a Software Engineer who views coding as a tool for solving
+              meaningful problems by prioritizing the "why" behind every
+              project. I focus on ensuring that every technical solution I build
+              directly aligns with business goals and delivers real-world value.
+            </p>
+            <p class="about-text">
+              I specialize in transforming complex requirements into
+              streamlined, efficient systems that bridge the gap between
+              technical constraints and ambitious visions. My goal is to build
+              reliable foundations that help businesses scale and succeed in a
+              rapidly changing digital landscape.
+            </p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
+            <div class="skills-grid">
+              <div class="skill-card" data-aos="flip-up" data-aos-delay="100">
+                <i class="bi bi-code-slash"></i>
+                <h5>Frontend</h5>
+                <p>Vue, React, HTML, CSS, JS</p>
+              </div>
+              <div class="skill-card" data-aos="flip-up" data-aos-delay="200">
+                <i class="bi bi-server"></i>
+                <h5>Backend</h5>
+                <p>Java Spring Boot, Express</p>
+              </div>
+              <div class="skill-card" data-aos="flip-up" data-aos-delay="300">
+                <i class="bi bi-database"></i>
+                <h5>Database</h5>
+                <p>MySQL, MongoDB, PostgreSQL</p>
+              </div>
+              <div class="skill-card" data-aos="flip-up" data-aos-delay="400">
+                <i class="bi bi-tools"></i>
+                <h5>More</h5>
+                <p>C++, Git, Copilot Studio, VS Code, PowerBI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= PROJECTS ======= -->
+    <section id="projects" class="section-padding section-alt">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Projects</h2>
+        <div
+          class="title-underline"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        ></div>
+        <div class="row mt-5 gy-4">
+          <!-- Project Card 1 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="project-card">
+              <div class="project-icon"><i class="bi bi-globe2"></i></div>
+              <h4>Expense Tracker</h4>
+              <p>
+                A full-stack expense tracking application with daily, monthly,
+                and yearly views to manage and visualize your spending.
+              </p>
+              <div class="project-tags">
+                <span>MERN</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/sharath778/expense-tracker" target="_blank"><i class="bi bi-github"></i> Code</a>
+                <a href="#" class="view-details" data-project="0"
+                  ><i class="bi bi-eye"></i> View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="project-card">
+              <div class="project-icon"><i class="bi bi-brush"></i></div>
+              <h4>Dynamic Portfolio Builder</h4>
+              <p>
+                A MERN-based app that lets users generate instant, professional
+                portfolios from trending templates by filling a simple form.
+              </p>
+              <div class="project-tags">
+                <span>MERN</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/sharath778/dynamic_portfolio_web_app" target="_blank"><i class="bi bi-github"></i> Code</a>
+                <a href="#" class="view-details" data-project="1"
+                  ><i class="bi bi-eye"></i> View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="project-card">
+              <div class="project-icon"><i class="bi bi-chat-dots"></i></div>
+              <h4>Live Chat App</h4>
+              <p>
+                A real-time chat application with WebSockets for instant
+                messaging, active status, and lag-free conversations.
+              </p>
+              <div class="project-tags">
+                <span>MERN</span><span>WebSockets</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/sharath778/LiveChatApp-MERN-" target="_blank"><i class="bi bi-github"></i> Code</a>
+                <a href="#" class="view-details" data-project="2"
+                  ><i class="bi bi-eye"></i> View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= EXPERIENCE ======= -->
+    <section id="experience" class="section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Experience</h2>
+        <div
+          class="title-underline"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        ></div>
+        <div class="timeline mt-5">
+          <!-- Timeline Item 1 -->
+          <div
+            class="timeline-item"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">(Aug - 2025) &mdash; Present</span>
+              <h4>Software Engineer</h4>
+              <h6>Lumen Technologies</h6>
+                <p>
+                  Developing frontend applications with seamless, user-focused
+                  experiences while exploring microservices architecture using
+                  Java and Spring Boot. Currently contributing to Vue and Spring
+                  Boot projects, continuously learning new technologies, and
+                  expanding my interest in AI.
+                </p>
+            </div>
+          </div>
+          <!-- Timeline Item 2 -->
+          <div
+            class="timeline-item"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">(Feb - 2025) &mdash; (Jul - 2025)</span>
+              <h4>SDE Intern</h4>
+              <h6>Lumen Technologies</h6>
+              <p>
+                 Built an AI agent POC for a user-facing application using
+                 Copilot Studio and REST APIs to deliver real-time data,
+                 while also contributing to frontend development and overall
+                 user experience improvements.
+              </p>
+            </div>
+          </div>
+          <!-- Timeline Item 3 -->
+          <div
+            class="timeline-item"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">(Nov - 2024) &mdash; (Jan - 2025)</span>
+              <h4>Elfinity Technologies</h4>
+              <h6>Frontend Developer</h6>
+              <p>
+                 Built a couple of React-based projects, gaining practical IT
+                 industry experience through real-time API integration and
+                 continuous improvements to user experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= EDUCATION ======= -->
+    <section id="education" class="section-padding section-alt">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Education</h2>
+        <div
+          class="title-underline"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        ></div>
+        <div class="timeline timeline-right mt-5">
+          <!-- Education Item 1 -->
+          <div
+            class="timeline-item"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2021 &mdash; 2025</span>
+              <h4>Bachelor of Technology (B.Tech)</h4>
+              <h6>Sri Venkateswara University College of Engineering</h6>
+              <p>
+                  Computer Science &amp; Engineering.<br />
+                  CGPA: 9.01
+              </p>
+            </div>
+          </div>
+          <!-- Education Item 2 -->
+          <div
+            class="timeline-item"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2019 &mdash; 2021</span>
+              <h4>MPC, Intermediate (12th)</h4>
+              <h6>Sri Chaitanya Junior College</h6>
+              <p>
+                  Mathematics, Physics, and Chemistry.<br />
+                  Marks: 954/1000
+              </p>
+            </div>
+          </div>
+          <!-- Education Item 3 -->
+          <div
+            class="timeline-item"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2019</span>
+              <h4>SSC (10th)</h4>
+              <h6>CRR High School</h6>
+              <p>
+                  Secondary School Certificate.<br />
+                  CGPA: 9.8
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CONTACT ======= -->
+    <section id="contact" class="section-padding section-alt">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+        <div
+          class="title-underline"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        ></div>
+        <div class="row mt-5 gy-5">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="bi bi-envelope-fill"></i>
+                <div>
+                  <h5>Email</h5>
+                  <p>
+                    <a href="mailto:2sharathkumar.b@gmail.com"
+                      >2sharathkumar.b@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-linkedin"></i>
+                <div>
+                  <h5>LinkedIn</h5>
+                  <p>
+                    <a
+                      href="https://www.linkedin.com/in/barinela-sharath-kumar-807b69279"
+                      target="_blank"
+                      >linkedin.com/in/barinela-sharath-kumar-807b69279</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-github"></i>
+                <div>
+                  <h5>GitHub</h5>
+                  <p>
+                    <a href="https://github.com/sharath778" target="_blank"
+                      >github.com/sharath778</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <h5>Location</h5>
+                  <p>Kurnool, Andhra Pradesh, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800">
+            <div class="contact-form-wrapper">
+              <h4>Send Me a Message</h4>
+              <form id="contactForm">
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="from_name"
+                      class="form-control custom-input"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      name="from_email"
+                      class="form-control custom-input"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      name="subject"
+                      class="form-control custom-input"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      name="message"
+                      class="form-control custom-input"
+                      rows="5"
+                      placeholder="Your Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-primary-custom w-100"
+                      id="submitBtn"
+                    >
+                      <span class="btn-text">Send Message</span>
+                      <span class="btn-loader d-none"
+                        ><i class="bi bi-arrow-repeat spin"></i>
+                        Sending...</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div id="formMessage" class="form-message mt-3 d-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="text-center">
+      <div class="container">
+        <div class="footer-socials mb-3">
+          <a href="https://github.com/sharath778" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/barinela-sharath-kumar-807b69279" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:2sharathkumar.b@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+        <p>&copy; 2026 Sharath Kumar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- ======= REUSABLE PROJECT MODAL ======= -->
+    <div
+      class="modal fade"
+      id="projectModal"
+      tabindex="-1"
+      aria-labelledby="projectModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content project-modal">
+          <div class="modal-header">
+            <h4 class="modal-title" id="projectModalLabel"></h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="project-modal-img">
+              <img id="modalImg" src="" alt="" class="img-fluid rounded-3" />
+            </div>
+            <div class="project-modal-tags mt-3" id="modalTags"></div>
+            <div class="project-modal-sections mt-4" id="modalSections"></div>
+          </div>
+          <div class="modal-footer">
+            <a href="#" id="modalCodeLink" target="_blank" class="btn btn-outline-custom"
+              ><i class="bi bi-github me-1"></i>View Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Config (credentials injected by CI) -->
+    <script src="config.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
